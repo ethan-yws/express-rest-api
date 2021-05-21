@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Ethan",
+    "subscribedChannel": "Software Engineering" 
+}
+
+###
+GET http://localhost:3000/subscribers/60a610f3d2278e1319cc4299
+
+
+###
+DELETE http://localhost:3000/subscribers/60a610f3d2278e1319cc4299
+
+###
+PATCH http://localhost:3000/subscribers/60a61058d2278e1319cc4298
+Content-Type: application/json
+
+{
+    "subscribedChannel": "Cats Treats" 
+}
